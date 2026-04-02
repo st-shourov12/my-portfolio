@@ -2,48 +2,84 @@
 
 import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import green from '../../assets/greennest.png'
+import hero from '../../assets/heroio.png'
+import cst from '../../assets/cst.png'
+import rent from '../../assets/rentWheels.png'
+import infra from '../../assets/infratrack-full.png'
+import devEl from '../../assets/screencapture-devel-seven-vercel-app-2026-04-02-20_09_17.png'
 
 export default function MyProjects() {
-  const [activeTab, setActiveTab] = useState('web');
+  const [activeTab, setActiveTab] = useState('front');
 
   const projects = [
     {
       id: 1,
-      title: "E-commerce Checkout UI",
-      description: "A clean, focused checkout UI for an e-commerce platform. Designed to reduce friction and maximize conversions through clear layout, validation, and trust-building elements.",
-      image: "https://via.placeholder.com/600x400.png?text=E-commerce+Checkout",
-      repoUrl: "https://github.com/yourname/checkout-ui",
-      demoUrl: "https://checkout-demo.netlify.app",
+      title: "Green Nest",
+      description: "GreenNest is an elegant single-page web application built for plant lovers who want to nurture and decorate their homes with healthy indoor plants. The platform allows users to explore plant care guides, buy plants, and book expert consultations — ensuring a greener and healthier living space during any season.",
+      image: `${green}`,
+      repoUrl: "https://github.com/st-shourov12/Green-Nest",
+      demoUrl: " https://green-nest-assign9.netlify.app/",
+      tech: ['HTML', 'CSS', 'TailWind'],
       type: "front"
     },
     {
       id: 2,
-      title: "Clinic Management Dashboard",
-      description: "Clinic management dashboard built for clarity and efficiency. Prioritizes quick access to patient data, appointment stats, and admin tools via clear layout and visual hierarchy.",
-      image: "https://via.placeholder.com/600x400.png?text=Clinic+Dashboard",
-      repoUrl: "https://github.com/yourname/clinic-dashboard",
-      demoUrl: "https://clinic-dashboard.netlify.app",
-      type: "both"
+      title: "Hero.io 🚀",
+      description: "Hero.io is an app downloading website where users can download apps for their needs. This is a prototype app featuring 24 types of applications, each designed to be highly user-friendly and smooth your technology journey.",
+      image: `${hero}`,
+      repoUrl: "https://github.com/st-shourov12/Hero-APP-io",
+      demoUrl: "https://devshow-hero-app-assignment-8.netlify.app",
+      type: "front"
     },
+
     {
       id: 3,
-      title: "Global AgriFood Corporate Site",
-      description: "Corporate website for an Algerian agri-food distributor, focused on trust-building through clear structure, strong visuals, and intuitive navigation.",
-      image: "https://via.placeholder.com/600x400.png?text=AgriFood+Website",
-      repoUrl: "https://github.com/yourname/global-agrifood",
-      demoUrl: "https://globalagrifood.dz",
+      title: "Customer Support Zone",
+      description: "Customer Support Zone is a A modern React application built with Vite, featuring fast refresh and ESLint configuration for optimal development experience.",
+      image: `${cst}`,
+      repoUrl: "https://github.com/st-shourov12/Assignment-07",
+      demoUrl: "https://customer-support-zone-991.netlify.app/",
       type: "front"
-    }
+    },
+    {
+      id: 4,
+      title: "Rent Wheels",
+      description: "RentWheels is a full-stack MERN application that connects users with local car owners or rental providers. Users can browse available cars, view details, and book rentals for specific dates. Car providers can list vehicles, manage bookings, and update car availability in real-time.",
+      image: `${rent}`,
+      repoUrl: "https://github.com/st-shourov12/Assignment-10-Rent-Wheels-Server",
+      demoUrl: "https://rentwheelsassignment.netlify.app/",
+      type: "full"
+    },
+    {
+      id: 5,
+      title: "InfraTrack",
+      description: "InfraTrack is a comprehensive civic engagement platform that empowers citizens to report, track, and resolve infrastructure issues in their communities. By bridging the gap between citizens and local government, InfraTrack promotes transparency, accountability, and collaborative problem-solving for building better cities.",
+      image: `${infra}`,
+      repoUrl: "https://github.com/st-shourov12/infraTrack",
+      demoUrl: "https://infra-track.vercel.app",
+      type: "full"
+    },
+    {
+      id: 6,
+      title: "Devel",
+      description: "A full-stack web development course selling platform built with Next.js App Router, NextAuth.js, MongoDB, and DaisyUI.",
+      image: `${devEl}`,
+      repoUrl: "https://github.com/st-shourov12/Devel",
+      demoUrl: "https://devel-seven.vercel.app/",
+      type: "full"
+    },
   ];
 
+  
   const filteredProjects = projects.filter(project =>
     activeTab === 'front'
-      ? project.type === 'front' || project.type === 'both'
-      : project.type === 'full' || project.type === 'both'
+      ? project.type === 'front' 
+      : project.type === 'full' || project.type === 'full'
   );
 
   return (
-    <div className=" py-16 w-10/12 mx-auto">
+    <div id='projects' className=" py-16 w-10/12 mx-auto">
       <div className="">
         {/* Title */}
         <h1 className="text-5xl md:text-6xl font-bold text-center text-white mb-16 tracking-tight">
@@ -71,7 +107,7 @@ export default function MyProjects() {
                   : 'text-white/70 hover:text-white'
               }`}
             >
-              Full Stack
+              MERN Stack
             </button>
           </div>
         </div>
@@ -81,7 +117,7 @@ export default function MyProjects() {
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="group relative bg-white/5 backdrop-blur-xl rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-500 hover:scale-105 shadow-2xl"
+              className="group relative bg-white/5 backdrop-blur-xl rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-500 hover:scale-105 shadow-2xl "
             >
               {/* Image */}
               <div className="relative overflow-hidden h-64">
@@ -94,18 +130,21 @@ export default function MyProjects() {
               </div>
 
               {/* Content */}
-              <div className="p-8">
-                <p className="text-white/90 text-lg leading-relaxed mb-8">
+              <div className="p-8 flex flex-col justify-between gap-8 h-auto">
+                <h2 className="text-3xl font-bold text-white/80">
+                  {project.title}
+                </h2>
+                <p className="text-white/90 text-lg leading-relaxed mb-20">
                   {project.description}
                 </p>
 
                 {/* Buttons */}
-                <div className="flex gap-4">
+                <div className="flex absolute bottom-0 gap-4 my-10">
                   <a
                     href={project.repoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur rounded-full border border-white/20 hover:bg-white/20 transition-all"
+                    className="flex items-center gap-2 px-6 py-3 text-white bg-white/10 backdrop-blur rounded-full border border-white/20 hover:bg-white/20 transition-all"
                   >
                     <FaGithub className="w-5 h-5" />
                     <span>Repository</span>
@@ -116,7 +155,7 @@ export default function MyProjects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-6 py-3 bg-linear-to-r from-purple-500 to-pink-500 rounded-full text-white font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all"
                   >
-                    <span>Demo</span>
+                    <span>Live Link</span>
                     <FaExternalLinkAlt className="w-4 h-4" />
                   </a>
                 </div>

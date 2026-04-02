@@ -5,10 +5,10 @@ import { FaCode } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div className=" w-5/6 mx-auto py-20 text-white ">
+    <div id="about" className=" w-5/6 mx-auto py-20 text-white ">
 
       {/* Title */}
-      <h1 className="text-center text-4xl font-bold mb-16">About Me</h1>
+      <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">About Me</h2>
 
       <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
 
@@ -30,13 +30,11 @@ const About = () => {
           </h2>
 
           <p className="text-gray-400 mt-4 leading-relaxed">
-            Software Engineering Master's student at USTHB and freelance
-            web/mobile developer in Algiers.
+            Frontend Developer, who loves to build beautiful and functional websites. 
           </p>
 
           <p className="text-gray-400 mt-4 leading-relaxed">
-            I create tailored solutions using Laravel, React, Flutter, and
-            more for startups and businesses.
+            I create user friendly, responsive, and visually appealing websites using modern technologies. 
           </p>
 
           {/* Cards */}
@@ -55,7 +53,7 @@ const About = () => {
               flex items-center gap-4 bg-white/5 backdrop-blur-md 
               hover:bg-white/10 transition shadow-[0_0_20px_#6b00ff40]">
               <FaCode className="text-purple-400 text-xl" />
-              <span className="text-gray-200 font-medium">Back End Development</span>
+              <span className="text-gray-200 font-medium">MERN Stack Development</span>
             </div>
 
             {/* Card 3 */}

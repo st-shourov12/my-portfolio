@@ -3,9 +3,11 @@ import './App.css';
 import Header from './components/header/Header';
 import Contact from './components/contact/Contact';
 import Hero from './components/hero/Hero';
-import About from './components/about/about';
+
 import MyProjects from './components/myProjects/MyProjects';
 import Skill from './Skill/Skill';
+import About from "./components/about/About";
+
 
 const App = () => {
   return (
@@ -21,7 +23,7 @@ const App = () => {
       <Contact></Contact>
 
       <footer className="py-10 text-center text-white/60">
-        © 2025 Shourov. Made with React & ❤️
+        © 2026 Shourov. Made with React & ❤️
       </footer>
       
     </div>

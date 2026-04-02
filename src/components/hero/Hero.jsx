@@ -1,5 +1,7 @@
 import React from "react";
 import { FaDownload, FaEnvelope } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
+
 import {
   FaFacebook,
   FaLinkedin,
@@ -50,11 +52,11 @@ const Hero = () => {
 
           {/* Button + Social Icons */}
           <div className="flex items-center gap-6 mt-8">
-            <button className="px-6 py-3 rounded-full bg-linear-to-r from-purple-500 to-pink-500 flex items-center gap-3 shadow-lg shadow-pink-700/40 hover:opacity-90 transition">
-              Download Resume <FaDownload />
-            </button>
+            <a href="https://drive.google.com/file/d/1HplM9pJo5DJJ114K6I2cZpqp0vuDM0v6/view" target="_blank" className="px-6 py-3 rounded-full bg-linear-to-r from-purple-500 to-pink-500 flex items-center gap-3 shadow-lg shadow-pink-700/40 hover:opacity-90 transition">
+              Resume <CgProfile  />
+            </a>
 
-            <div className="flex gap-4 text-xl">
+            {/* <div className="flex gap-4 text-xl">
                 <a href="https://shourovsc38@gmail.com" target="_blank" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 border border-white/20 text-white text-xl cursor-pointer hover:bg-white/20"><FaEnvelope className="hover:text-purple-400 cursor-pointer"></FaEnvelope>
                 </a>
                 <a  href="https://www.linkedin.com/in/miraz-shourov/" target="_blank" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 border border-white/20 text-white text-xl cursor-pointer hover:bg-white/20">
@@ -73,7 +75,7 @@ const Hero = () => {
                     <FaFacebook className="hover:text-purple-400 cursor-pointer" />
                 </a>
               
-            </div>
+            </div> */}
           </div>
         </div>
 
