@@ -11,7 +11,7 @@ import About from "./components/about/About";
 
 const App = () => {
   return (
-    <div className='w-full mx-auto min-h-screen bg-linear-to-br from-purple-900 via-black to-pink-900 
+    <div className='w-full mx-auto min-h-screen bg-linear-to-tl from-purple-900 via-black to-pink-900 
   overflow-hidden'>
 
       <Header></Header>

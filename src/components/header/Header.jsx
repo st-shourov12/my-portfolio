@@ -23,7 +23,7 @@ const Header = () => {
                     
                 </ul>
                 </div>
-                <Link to={'/'} class="text-xl font-bold text-[#FFF]">Shourov<span class="text-[#BE4BFF]">&lt;/&gt;</span></Link>
+                <Link to={'/'} class="text-2xl font-bold text-[#FFF]"><span class="text-[#BE4BFF]">&lt;<span className='text-white'>Shourov</span>/&gt;</span></Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
