@@ -27,7 +27,7 @@ const Header = () => {
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><NavLink to={'/'} className="text-lg font-semibold">Home</NavLink></li>
+                    <li><a href={'#'} className="text-lg font-semibold">Home</a></li>
                     <li><a href={'#about'} className="text-lg font-semibold">About</a></li>
                     <li><a href={'#skills'} className="text-lg font-semibold">Skills</a></li>
                     <li><a href={'#projects'} className="text-lg font-semibold">Projects</a></li>

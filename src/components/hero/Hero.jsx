@@ -42,7 +42,7 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-3xl font-semibold mt-4 bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Mern stack developer
+            MERN Stack Developer
           </h2>
 
           <p className="text-gray-400 mt-6 max-w-lg">

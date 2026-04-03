@@ -30,7 +30,7 @@ const About = () => {
           </h2>
 
           <p className="text-gray-400 mt-4 leading-relaxed">
-            Frontend Developer, who loves to build beautiful and functional websites. 
+            MERN Stack Developer specially focused on Frontend Development, who loves to build beautiful and functional websites. 
           </p>
 
           <p className="text-gray-400 mt-4 leading-relaxed">

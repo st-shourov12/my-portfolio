@@ -22,7 +22,9 @@ const App = () => {
 
       <Contact></Contact>
 
-      <footer className="py-10 text-center text-white/60">
+      <div className=' border border-purple-900 w-full h-full mt-10'></div>
+
+      <footer className="py-5 text-center text-white/60">
         © 2026 Shourov. Made with React & ❤️
       </footer>
       
