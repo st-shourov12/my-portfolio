@@ -7,6 +7,9 @@ import Hero from './components/hero/Hero';
 import MyProjects from './components/myProjects/MyProjects';
 import Skill from './Skill/Skill';
 import About from "./components/about/About";
+import Footer from './components/Footer';
+import Education from './components/education/Education';
+import Activities from './components/activities/Activities';
 
 
 const App = () => {
@@ -19,14 +22,17 @@ const App = () => {
       <About></About>
       <Skill></Skill>
       <MyProjects></MyProjects>
-
+      <Education></Education>
+      <Activities></Activities>
       <Contact></Contact>
 
       <div className=' border border-purple-900 w-full h-full mt-10'></div>
 
-      <footer className="py-5 text-center text-white/60">
+      {/* <footer className="py-5 text-center text-white/60">
         © 2026 Shourov. Made with React & ❤️
-      </footer>
+      </footer> */}
+
+      <Footer></Footer>
       
     </div>
   );
