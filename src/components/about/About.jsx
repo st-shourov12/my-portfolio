@@ -160,21 +160,21 @@ const About = () => {
           </div>
 
           {/* Stat badges */}
-          {/* <div
+          <div
             className="absolute top-6 -right-4 lg:-right-10 bg-[#0d0018]/80 backdrop-blur-md border border-purple-500/40 px-4 py-2 rounded-xl text-center"
             style={{ animation: 'float 3.5s ease-in-out infinite 0.4s', boxShadow: '0 0 16px #6b00ff50' }}
           >
-            <p className="text-xl font-bold text-white">1+</p>
-            <p className="text-xs text-gray-400">Years Exp.</p>
+            <p className="text-xs font-bold text-white">Front End</p>
+            <p className="text-xs text-gray-400">Developer</p>
           </div>
 
           <div
             className="absolute bottom-6 -left-4 lg:-left-10 bg-[#0d0018]/80 backdrop-blur-md border border-pink-500/40 px-4 py-2 rounded-xl text-center"
             style={{ animation: 'float 3.5s ease-in-out infinite 1s', boxShadow: '0 0 16px #ec489950' }}
           >
-            <p className="text-xl font-bold text-white">10+</p>
-            <p className="text-xs text-gray-400">Projects</p>
-          </div> */}
+            <p className="text-xl font-bold text-white">MERN Stack</p>
+            <p className="text-xs text-gray-400">Developer</p>
+          </div>
 
         </div>
 
