@@ -40,6 +40,20 @@ const Activities = () => {
 
   return (
     <div id="activities" className=" py-20 relative overflow-hidden">
+       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+              {[...Array(12)].map((_, i) => (
+                <div
+                  key={i}
+                  className="absolute w-1 h-1 rounded-full bg-purple-400/40"
+                  style={{
+                    left: `${Math.random() * 100}%`,
+                    top: `${Math.random() * 80}%`,
+                    animation: `particle-rise ${Math.random() * 12 + 8}s linear infinite`,
+                    animationDelay: `${Math.random() * 5}s`,
+                  }}
+                />
+              ))}
+            </div>
       {/* Background glows */}
       <div className="absolute top-10 -left-40 w-96 h-96 bg-blue-700/10 rounded-full blur-3xl" />
       <div className="absolute bottom-10 -right-40 w-96 h-96 bg-rose-700/10 rounded-full blur-3xl" />

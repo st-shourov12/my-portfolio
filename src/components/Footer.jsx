@@ -26,6 +26,8 @@ const Footer = () => {
     { name: "About", id: "about" },
     { name: "Skills", id: "skill" },   // adjust id if your Skill component has different id
     { name: "Projects", id: "projects" },
+    { name: 'Education',  id: 'education'},
+    { name: 'Activities', id: 'activities'},
     { name: "Contact", id: "contact" },
   ];
 

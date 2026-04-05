@@ -123,7 +123,22 @@ const Skill = () => {
     ];
 
     return (
-        <section id="skills" className="py-20">
+        <section id="skills" className="py-20 relative">
+             <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+                    {[...Array(12)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="absolute w-1 h-1 rounded-full bg-purple-400/40"
+                        style={{
+                          left: `${Math.random() * 100}%`,
+                          top: `${Math.random() * 80}%`,
+                          animation: `particle-rise ${Math.random() * 12 + 8}s linear infinite`,
+                          animationDelay: `${Math.random() * 5}s`,
+                        }}
+                      />
+                    ))}
+                  </div>
+            
             <div className="w-10/12 mx-auto">
 
                 {/* Header */}

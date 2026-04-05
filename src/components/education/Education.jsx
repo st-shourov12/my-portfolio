@@ -14,7 +14,7 @@ const Education = () => {
         <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-linear-to-r from-purple-500 to-pink-500" />
       </div>
 
-      <div className="max-w-4xl mx-auto">
+      <div className=" mx-auto">
         <div className="relative border-l-2 border-purple-500/30 pl-8 md:pl-12">
 
           {/* Education Card */}

@@ -345,6 +345,7 @@ const ProjectModal = ({ project, onClose }) => {
         style={{ animation: 'modalIn 0.3s ease' }}
         onClick={(e) => e.stopPropagation()}
       >
+        
         {/* Close */}
         <button
           onClick={onClose}

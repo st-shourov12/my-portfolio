@@ -106,7 +106,21 @@ const cards = [
 
 const About = () => {
   return (
-    <div id="about" className="w-5/6 mx-auto py-20 text-white">
+    <div id="about" className="w-5/6 relative mx-auto py-20 text-white">
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        {[...Array(12)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 rounded-full bg-purple-400/40"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 80}%`,
+              animation: `particle-rise ${Math.random() * 12 + 8}s linear infinite`,
+              animationDelay: `${Math.random() * 5}s`,
+            }}
+          />
+        ))}
+      </div>
 
       {/* Title */}
       <div className="text-center mb-16">
@@ -202,7 +216,7 @@ const About = () => {
 
           {/* CTA */}
           <div className="mt-8 flex gap-4 flex-wrap">
-            
+
             <a href="#contact"
               className="px-6 py-3 rounded-full bg-linear-to-r from-purple-500 to-pink-500 
                          font-medium hover:opacity-90 hover:scale-105 transition-all duration-300
@@ -210,8 +224,8 @@ const About = () => {
             >
               Let's Talk →
             </a>
-            
-            <a  href="#projects"
+
+            <a href="#projects"
               className="px-6 py-3 rounded-full border border-purple-500/50 font-medium 
                          hover:bg-white/10 hover:scale-105 transition-all duration-300"
             >
