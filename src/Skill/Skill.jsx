@@ -79,12 +79,12 @@ const SkillCard = ({ skill, visible }) => {
 
             {/* Progress bar */}
             <div className="w-full relative z-10">
-                {/* <div className="flex justify-between text-xs text-gray-400 mb-1">
+                <div className="flex justify-between text-xs text-gray-400 mb-1">
                     <span className="text-gray-500">Proficiency</span>
                     <span className={`font-semibold bg-linear-to-r ${skill.tagColor} bg-clip-text text-transparent`}>
                         {skill.level}%
                     </span>
-                </div> */}
+                </div>
                 <div className="w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
                     <div
                         className={`h-full bg-linear-to-r ${skill.tagColor} rounded-full transition-all duration-1000 ease-out`}

@@ -172,7 +172,7 @@ const About = () => {
             className="absolute bottom-6 -left-4 lg:-left-10 bg-[#0d0018]/80 backdrop-blur-md border border-pink-500/40 px-4 py-2 rounded-xl text-center"
             style={{ animation: 'float 3.5s ease-in-out infinite 1s', boxShadow: '0 0 16px #ec489950' }}
           >
-            <p className="text-xl font-bold text-white">MERN Stack</p>
+            <p className="text-xs font-bold text-white">MERN Stack</p>
             <p className="text-xs text-gray-400">Developer</p>
           </div>
 
