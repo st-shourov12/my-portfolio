@@ -78,7 +78,7 @@
 import React from "react";
 import { FaGlobe, FaMobileAlt, FaBrain } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
-import pro from '../../assets/WhatsApp Image 2025-11-18 at 21.42.55_1e71dfbf.jpg';
+// import pro from '../../assets/WhatsApp Image 2025-11-18 at 21.42.55_1e71dfbf.jpg';
 
 const cards = [
   {
@@ -156,7 +156,7 @@ const About = () => {
               animation: 'float 4s ease-in-out infinite',
             }}
           >
-            <img src={pro} alt="profile" className="w-full h-full object-cover" />
+            <img src={'https://i.ibb.co.com/1GRwzTQz/Serious-gaze-in-dim-light.png'} alt="profile" className="w-full h-full object-cover" />
           </div>
 
           {/* Stat badges */}
